@@ -73,16 +73,14 @@ Rumus untuk luas lingkaran adalah π × r². Dalam Java, kita menggunakan Math.P
         float sisiMiring = (float) Math.sqrt(alas*alas*tinggi*tinggi);
         return (float)(alas+tinggi+sisiMiring);
         
+      }
     }
-    
-    
-  }
  
  ~~~
 
 <p> Class Segitiga adalah subclass dari BangunDatar yang menghitung luas dan keliling segitiga siku-siku menggunakan alas dan tinggi yang diberikan.</p>
 
-- Class Persegi
+<p> - Class Persegi</p>
 
 ~~~
 
