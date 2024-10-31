@@ -1,10 +1,14 @@
 # Praktikum4
-Implementasikan java code diagram class berikut:
+
+  # *Implementasikan java code diagram class berikut:*
 
 ![image](https://github.com/user-attachments/assets/0ead166d-fb8e-4619-a3e7-8e2cb9167599)
 
-- Class BangunDatar
-  
+
+# *Class BangunDatar*
+
+![](BangunDatar.png).
+
  ~~~
 package bangundatar;
 
@@ -16,7 +20,10 @@ abstract class BangunDatar {
 
 <p>Class BangunDatar adalah class abstrak yang memiliki metode keliling() yang juga abstrak. Artinya, keliling() tidak memiliki implementasi di sini dan harus diimplementasikan oleh subclass yang mewarisi BangunDatar.</p>
 
-## class Lingkaran
+
+# *Class Lingkaran*
+
+![](Lingkaran.png).
   
 ```
  package bangundatar;
@@ -39,9 +46,23 @@ public class Lingkaran extends BangunDatar {
 }
 ```
 
-<p>Mendefinisikan kelas bernama Lingkaran. Kelas Lingkaran mewarisi (menurunkan) kelas BangunDatar, yang merupakan kelas abstrak. Karena BangunDatar memiliki metode abstrak luas() dan keliling(), Lingkaran harus mengimplementasikan metode-metode tersebut. Menginisialisasi nilai r (jari-jari) ketika objek Lingkaran dibuat lalu Menetapkan nilai parameter r ke atribut r di dalam kelas, sehingga nilai jari-jari disimpan di objek Lingkaran. Rumus untuk luas lingkaran adalah π × r². Dalam Java, kita menggunakan Math.PI untuk nilai π. Rumus untuk keliling lingkaran adalah 2 × π × r. Kita gunakan Math.PI untuk nilai π.</p>
+# Penjelasannya
+  - <p> Mendefinisikan kelas bernama Lingkaran. 
+ 
+  - Kelas Lingkaran mewarisi (menurunkan) kelas BangunDatar, yang merupakan kelas abstrak.
+  Karena BangunDatar memiliki metode abstrak luas() dan keliling(), Lingkaran harus mengimplementasikan metode-metode tersebut. 
+ 
+  - Menginisialisasi nilai r (jari-jari) ketika objek Lingkaran dibuat lalu Menetapkan nilai parameter r ke atribut r di dalam kelas,
+  sehingga nilai jari-jari disimpan di objek Lingkaran.
 
-## class Segitiga
+  - Rumus untuk luas lingkaran adalah π × r². Dalam Java, kita menggunakan Math.PI untuk nilai π.
+
+  - Rumus untuk keliling lingkaran adalah 2 × π × r. Kita gunakan Math.PI untuk nilai π.</p>
+
+# *Class Segitiga*
+
+![](Segitiga.png).
+
 
 ```
   package bangundatar;
@@ -70,9 +91,13 @@ public class Lingkaran extends BangunDatar {
     }
  ```
 
-<p> Class Segitiga adalah subclass dari BangunDatar yang menghitung luas dan keliling segitiga siku-siku menggunakan alas dan tinggi yang diberikan.</p>
+# Penjelasannya
+  - <p> Class Segitiga adalah subclass dari BangunDatar yang menghitung luas dan keliling segitiga siku-siku menggunakan alas dan tinggi yang diberikan.</p>
 
-## class Persegi
+
+# *Class Persegi*
+
+![](Persegi.png).
 
 ```
 package bangundatar;
@@ -98,9 +123,24 @@ public class Persegi extends BangunDatar {
 
 ```
 
-<p>Kelas `Persegi` dalam kode Java ini merupakan turunan dari kelas `BangunDatar` yang bertujuan untuk menghitung luas dan keliling persegi. Atribut `sisi` menyimpan panjang sisi persegi dan diinisialisasi melalui konstruktor `Persegi(int sisi)`. Metode `luas` menghitung luas dengan rumus \( \text{sisi} \times \text{sisi} \), sementara metode `keliling` menggunakan rumus \( 4 \times \text{sisi} \) untuk keliling. Kedua metode tersebut mengembalikan hasil dalam tipe `float`, dengan casting `(float)` untuk memastikan tipe data yang konsisten.</p>
+# Penjelasannya
+  - <p>Kelas `Persegi` dalam kode Java ini merupakan turunan dari kelas `BangunDatar` yang bertujuan untuk menghitung luas dan keliling persegi. 
+ 
+  - Atribut `sisi` menyimpan panjang sisi persegi dan diinisialisasi melalui konstruktor `Persegi(int sisi)`.
 
-## clas Main
+  - Metode `luas` menghitung luas dengan rumus \( \text{sisi} \times \text{sisi} \),
+  sementara metode `keliling` menggunakan rumus \( 4 \times \text{sisi} \) untuk keliling.
+
+  - Kedua metode tersebut mengembalikan hasil dalam tipe `float`, dengan casting `(float)` untuk memastikan tipe data yang konsisten.</p>
+
+
+# *Class Main*
+
+![](Utama1.png).
+
+![](Utama2.png).
+
+![](Utama3.png).
 
 ```
 package bangundatar;
@@ -187,10 +227,16 @@ public class Utama {
 }
 ```
 
-<p> Kode di atas mendefinisikan class `Utama` yang berisi beberapa class turunan dari class abstrak `BangunDatar`: `Lingkaran`, `Segitiga`, dan `Persegi`. Masing-masing class turunan mengimplementasikan metode `luas()` dan `keliling()` sesuai dengan rumus masing-masing bentuk geometris. Class `Lingkaran` menggunakan jari-jari `r` untuk menghitung luas dan keliling lingkaran, class `Segitiga` menggunakan alas dan tinggi untuk menghitung luas dan keliling segitiga (diasumsikan sebagai segitiga siku-siku), dan class `Persegi` menggunakan panjang sisi untuk menghitung luas dan keliling persegi. Pada method `main`, objek dari masing-masing class (`Lingkaran`, `Segitiga`, dan `Persegi`) dibuat, lalu luas dan keliling dari setiap objek dicetak di konsol.</p>
+# Penjelasannya
+  - <p> Kode di atas mendefinisikan class `Utama` yang berisi beberapa class turunan dari class abstrak `BangunDatar`: `Lingkaran`, `Segitiga`, dan `Persegi`.
+  - Masing-masing class turunan mengimplementasikan metode `luas()` dan `keliling()` sesuai dengan rumus masing-masing bentuk geometris.
+  - Class `Lingkaran` menggunakan jari-jari `r` untuk menghitung luas dan keliling lingkaran,
+  class `Segitiga` menggunakan alas dan tinggi untuk menghitung luas dan keliling segitiga (diasumsikan sebagai segitiga siku-siku),
+  dan class `Persegi` menggunakan panjang sisi untuk menghitung luas dan keliling persegi.
+  - Pada method `main`, objek dari masing-masing class (`Lingkaran`, `Segitiga`, dan `Persegi`) dibuat, lalu luas dan keliling dari setiap objek dicetak di konsol.</p>
+
 
 ## Output
+
 ![](Otput.png).
-
-
 
