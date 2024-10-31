@@ -190,7 +190,7 @@ public class Utama {
 <p> Kode di atas mendefinisikan class `Utama` yang berisi beberapa class turunan dari class abstrak `BangunDatar`: `Lingkaran`, `Segitiga`, dan `Persegi`. Masing-masing class turunan mengimplementasikan metode `luas()` dan `keliling()` sesuai dengan rumus masing-masing bentuk geometris. Class `Lingkaran` menggunakan jari-jari `r` untuk menghitung luas dan keliling lingkaran, class `Segitiga` menggunakan alas dan tinggi untuk menghitung luas dan keliling segitiga (diasumsikan sebagai segitiga siku-siku), dan class `Persegi` menggunakan panjang sisi untuk menghitung luas dan keliling persegi. Pada method `main`, objek dari masing-masing class (`Lingkaran`, `Segitiga`, dan `Persegi`) dibuat, lalu luas dan keliling dari setiap objek dicetak di konsol.</p>
 
 ## Output
-![](Outup.png).
+![](Otput.png).
 
 
 
