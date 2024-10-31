@@ -14,15 +14,12 @@ abstract class BangunDatar {
     }
   ~~~
 
-<p>Class BangunDatar adalah class abstrak yang memiliki metode keliling() yang juga abstrak. Artinya, keliling() tidak memiliki implementasi di sini dan harus diimplementasikan oleh subclass yang mewarisi BangunDatar.
-</p>
+<p>Class BangunDatar adalah class abstrak yang memiliki metode keliling() yang juga abstrak. Artinya, keliling() tidak memiliki implementasi di sini dan harus diimplementasikan oleh subclass yang mewarisi BangunDatar.</p>
 
-- Class Lingkaran
+## class Lingkaran
   
-~~~
-  package bangundatar;
-
-
+```
+ package bangundatar;
 public class Lingkaran extends BangunDatar {
    private int r;
     
@@ -30,7 +27,6 @@ public class Lingkaran extends BangunDatar {
         this.r = r;
     }
 
-    
     float luas() {
        return (float) (Math.PI *r*r);
     }
@@ -41,17 +37,14 @@ public class Lingkaran extends BangunDatar {
     }
     
 }
-~~~
+```
 
-<p>Mendefinisikan kelas bernama Lingkaran. Kelas Lingkaran mewarisi (menurunkan) kelas BangunDatar, yang merupakan kelas abstrak. Karena BangunDatar memiliki metode abstrak luas() dan keliling(), Lingkaran harus mengimplementasikan metode-metode tersebut. Menginisialisasi nilai r (jari-jari) ketika objek Lingkaran dibuat lalu Menetapkan nilai parameter r ke atribut r di dalam kelas, sehingga nilai jari-jari disimpan di objek Lingkaran.
-Rumus untuk luas lingkaran adalah π × r². Dalam Java, kita menggunakan Math.PI untuk nilai π. Rumus untuk keliling lingkaran adalah 2 × π × r. Kita gunakan Math.PI untuk nilai π.</p>
+<p>Mendefinisikan kelas bernama Lingkaran. Kelas Lingkaran mewarisi (menurunkan) kelas BangunDatar, yang merupakan kelas abstrak. Karena BangunDatar memiliki metode abstrak luas() dan keliling(), Lingkaran harus mengimplementasikan metode-metode tersebut. Menginisialisasi nilai r (jari-jari) ketika objek Lingkaran dibuat lalu Menetapkan nilai parameter r ke atribut r di dalam kelas, sehingga nilai jari-jari disimpan di objek Lingkaran. Rumus untuk luas lingkaran adalah π × r². Dalam Java, kita menggunakan Math.PI untuk nilai π. Rumus untuk keliling lingkaran adalah 2 × π × r. Kita gunakan Math.PI untuk nilai π.</p>
 
-- Class Segitiga
-  
-  ~~~
+## class Segitiga
 
+```
   package bangundatar;
-
   public class Segitiga extends BangunDatar{
     private int alas, tinggi;
     
@@ -75,15 +68,13 @@ Rumus untuk luas lingkaran adalah π × r². Dalam Java, kita menggunakan Math.P
         
       }
     }
- 
- ~~~
+ ```
 
 <p> Class Segitiga adalah subclass dari BangunDatar yang menghitung luas dan keliling segitiga siku-siku menggunakan alas dan tinggi yang diberikan.</p>
 
-<p> - Class Persegi</p>
+## class Persegi
 
-~~~
-
+```
 package bangundatar;
 
 public class Persegi extends BangunDatar {
@@ -105,14 +96,13 @@ public class Persegi extends BangunDatar {
     
 }
 
-~~~
+```
 
-<p>Class Segitiga adalah subclass dari BangunDatar yang menghitung luas dan keliling segitiga siku-siku menggunakan alas dan tinggi yang diberikan.
-</p>
+<p>Class Segitiga adalah subclass dari BangunDatar yang menghitung luas dan keliling segitiga siku-siku menggunakan alas dan tinggi yang diberikan.</p>
 
-- Class Utama
+## clas Main
 
-~~~
+```
 package bangundatar;
 
 public class Utama {
@@ -195,10 +185,11 @@ public class Utama {
         System.out.println("Keliling Persegi: " + persegi.keliling());
     }
 }
-~~~
+```
 
 <p> Kode di atas mendefinisikan class `Utama` yang berisi beberapa class turunan dari class abstrak `BangunDatar`: `Lingkaran`, `Segitiga`, dan `Persegi`. Masing-masing class turunan mengimplementasikan metode `luas()` dan `keliling()` sesuai dengan rumus masing-masing bentuk geometris. Class `Lingkaran` menggunakan jari-jari `r` untuk menghitung luas dan keliling lingkaran, class `Segitiga` menggunakan alas dan tinggi untuk menghitung luas dan keliling segitiga (diasumsikan sebagai segitiga siku-siku), dan class `Persegi` menggunakan panjang sisi untuk menghitung luas dan keliling persegi. Pada method `main`, objek dari masing-masing class (`Lingkaran`, `Segitiga`, dan `Persegi`) dibuat, lalu luas dan keliling dari setiap objek dicetak di konsol.</p>
 
-#output
+## Output
 
-![gambar](Otput.png)
+
+
